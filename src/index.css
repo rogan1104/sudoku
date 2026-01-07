@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 186 75% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 30% 92%;
+    --secondary-foreground: 215 25% 20%;
+
+    --muted: 210 30% 94%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 35 90% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 25% 88%;
+    --input: 210 25% 88%;
+    --ring: 186 75% 45%;
+
+    --radius: 0.5rem;
+
+    --sudoku-cell: 0 0% 100%;
+    --sudoku-cell-given: 210 30% 96%;
+    --sudoku-cell-filled: 186 85% 94%;
+    --sudoku-cell-error: 0 75% 95%;
+    --sudoku-cell-solving: 35 100% 93%;
+    --sudoku-border-thick: 215 25% 30%;
+    --sudoku-border-thin: 210 20% 75%;
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 215 30% 12%;
+    --foreground: 210 40% 95%;
+
+    --card: 215 28% 16%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 215 28% 16%;
+    --popover-foreground: 210 40% 95%;
+
+    --primary: 186 75% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 25% 22%;
+    --secondary-foreground: 210 40% 95%;
+
+    --muted: 215 25% 20%;
+    --muted-foreground: 215 15% 60%;
+
+    --accent: 35 90% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 25% 25%;
+    --input: 215 25% 25%;
+    --ring: 186 75% 55%;
+
+    --sudoku-cell: 215 25% 18%;
+    --sudoku-cell-given: 215 25% 22%;
+    --sudoku-cell-filled: 186 60% 20%;
+    --sudoku-cell-error: 0 60% 25%;
+    --sudoku-cell-solving: 35 70% 25%;
+    --sudoku-border-thick: 210 30% 70%;
+    --sudoku-border-thin: 215 20% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
